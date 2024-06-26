@@ -1,11 +1,26 @@
-# simpleWebAPI
-A simple mvc controller-based dotnet web api.
+# SimpleWebAPI
+A simple mvc controller-based dotnet - 8.0 web api.
 # Controllers
 Show how to create request handlers.
-  - GET
-  - POST
-  - PATCH
-  - DELETE
+## GET 
+```
+api/User
+```
+```
+api/User/3
+```
+## POST 
+```
+api/User
+```
+## PUT 
+```
+api/User/4
+```
+## DELETE
+```
+api/User/3
+```
 # Commands
 ## Initial a folder to a dotnet project
 ```

@@ -35,7 +35,7 @@ namespace simpleWebAPI.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users/5
+        // GET: api/User/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(long id)
         {
@@ -53,7 +53,7 @@ namespace simpleWebAPI.Controllers
             return User;
         }
 
-        // PUT: api/Users/5
+        // PUT: api/User/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(long id, User User)
