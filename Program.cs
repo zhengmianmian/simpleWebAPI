@@ -23,5 +23,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+// Set up default route to /api/Users
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/api/User");
+    return Task.CompletedTask;
+});
 
 app.Run();
